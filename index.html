@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>MODAL WINDOW</title>
+</head>
+<body>
+<main><div class="container">
+    <h1>Создание модального окна на JS</h1>
+    <p> Разработка логики модального окна и получения данных с API (Список видов кофе)</p>
+
+</div>
+<div class="container-button">
+    <ul>
+        <li>
+            <label for="open-button"> Run modal window </label>
+            <button class="open-button" id="open-button" data-open="data-open"> RUN </button>
+        </li>
+        <li>
+            <label for="delete-modal"> Delete modal window </label>
+            <button class="delete-modal" id="delete-modal" data-delete="true" disabled> DELETE </button>
+        </li>
+        <li>
+            <label for="create-modal"> CREATE MODAL WINDOW IN DOM-TREE </label>
+            <button class="create-modal" id="create-modal" data-create="true" disabled> CREATE MODAL WINDOW IN DOM-TREE </button>
+        </li>
+    </ul>
+</div>
+
+<div > Запрос к API и получение списка видов кофе
+    <button class='repeated_request' type="button"> Повторный запрос </button></div>
+<div class="all-coffee">
+
+</div>
+</main>
+<script src="base.js"></script>
+<script src="plugins/modal.js "></script>
+<script src="plugins/promise.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
